@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router'
 @Component({
 	selector: 'wbreadcrumb',
 	templateUrl: './breadcrumb.component.html',
@@ -7,5 +8,6 @@ import { Component, Input } from '@angular/core';
 export class BreadcrumbComponent{
 	@Input() path: any = []
 	@Input() divider: string = '/'
-	constructor() {}
+	constructor(public router: Router) {}
+
 }
