@@ -2,10 +2,10 @@
 
 ## Usage
 ```html
-<wbreadcrumb [path]="[['Home', '#'], ['Library', 'uikit'], ['Data', '#']]"></wbreadcrumb>
+<wbreadcrumb [path]="path"></wbreadcrumb>
 ```
 
 ## Arguments
 ```
-path: Array | List of paths, [['Home', '#'], ['Library', 'uikit'], ['Data', '#']]
+path: Array | List of breadcrumbs: [{name: 'Home', url: '/sign'}, { name: 'Uikit', url: '/uikit' }]
 ```
