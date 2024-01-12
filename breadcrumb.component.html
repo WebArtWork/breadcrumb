@@ -1,5 +1,7 @@
+<!-- breadcrumb.componennt.html -->
 <nav>
 	<ol class="breadcrumb">
 		<li class="li" *ngFor="let item of path" (click)="router.navigate([item.url])"><a class="breadcrumb_item">{{item.name}}</a></li>
 	</ol>
 </nav>
+
